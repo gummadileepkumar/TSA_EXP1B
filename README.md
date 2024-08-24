@@ -8,6 +8,7 @@
 
 ### AIM:
 To perform regular differncing,seasonal adjustment and log transformatio on power consumption dataset
+
 ### ALGORITHM:
 1. Import the required packages like pandas and numpy
 2. Read the data using the pandas
@@ -22,6 +23,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline
 ```
+
 #### Preprocessing:
 ```python
 train = pd.read_csv('infy_stock-Copy1.csv')
@@ -32,6 +34,7 @@ print(train.columns)
 train.columns = train.columns.str.strip()
 train['Turnover'].plot()
 ```
+
 #### REGULAR DIFFERENCING:
 ```python
 from statsmodels.tsa.stattools import adfuller
@@ -47,6 +50,7 @@ train['Turnover_diff']=train['Turnover']-train['Turnover'].shift(1)
 train['Turnover_diff'].dropna().plot()
 plt.title('Regualr Differencing')
 ```
+
 #### SEASONAL DIFFERENCING:
 ```python
 n=7
@@ -55,6 +59,7 @@ train['Turnover_diff'].dropna().plot()
 plt.title('Seasona Differencing')
 
 ```
+
 #### LOG TRANSFORMATION:
 ```python
 train['Turnover_log']=np.log(train['Turnover'])
@@ -72,6 +77,7 @@ plt.title('Log Transformation')
 ![Re_1 2_1](https://github.com/user-attachments/assets/b2112a16-5849-4ac6-afdb-b4f83761b795)
 
 
+
 ##### SEASONAL ADJUSTMENT:
 
 ![re_1 2_2](https://github.com/user-attachments/assets/3b00aaa7-9d5c-421f-9c12-c58644a2bd1d)
@@ -83,5 +89,7 @@ plt.title('Log Transformation')
 ![Re_1 2_3](https://github.com/user-attachments/assets/31755f97-a66a-4494-92be-8882c2856516)
 
 
+
 ### RESULT:
+
 Thus we have successfully created the python code for the conversion of non stationary to stationary data of power consumption dataset.
