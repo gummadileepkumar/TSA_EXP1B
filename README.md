@@ -1,13 +1,14 @@
-# Ex.No: 1B                     CONVERSION OF NON STATIONARY TO STATIONARY DATA
-
 # Developed By: Gumma Dileep Kumar
 
 # Register No: 212222240032
 
 # Date: 
 
+# Ex.No: 1B                     CONVERSION OF NON STATIONARY TO STATIONARY DATA
+
+
 ### AIM:
-To perform regular differncing,seasonal adjustment and log transformatio on power consumption dataset
+To perform regular differncing,seasonal adjustment and log transformatio on infy_stock dataset
 
 ### ALGORITHM:
 1. Import the required packages like pandas and numpy
