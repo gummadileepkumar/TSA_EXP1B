@@ -93,4 +93,4 @@ plt.title('Log Transformation')
 
 ### RESULT:
 
-Thus we have successfully created the python code for the conversion of non stationary to stationary data of infy stock dataset.
+Thus we have successfully created the python code for the conversion of non stationary to stationary data of infy stock data.
