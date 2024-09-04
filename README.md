@@ -8,7 +8,7 @@
 
 
 ### AIM:
-To perform regular differncing,seasonal adjustment and log transformatio on infy_stock dataset
+To perform regular differncing,seasonal adjustment and log transformation on infy_stock dataset
 
 ### ALGORITHM:
 1. Import the required packages like pandas and numpy
@@ -93,4 +93,4 @@ plt.title('Log Transformation')
 
 ### RESULT:
 
-Thus we have successfully created the python code for the conversion of non stationary to stationary data of power consumption dataset.
+Thus we have successfully created the python code for the conversion of non stationary to stationary data of infy stock dataset.
